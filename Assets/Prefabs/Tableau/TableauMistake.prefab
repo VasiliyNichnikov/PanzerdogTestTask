@@ -427,9 +427,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606337405726524193, guid: bb46c867cae151b41993076b7c629ff7, type: 3}
+      propertyPath: m_Text
+      value: Oops!!!
+      objectReference: {fileID: 0}
     - target: {fileID: 4606337405726524197, guid: bb46c867cae151b41993076b7c629ff7, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606337405727257379, guid: bb46c867cae151b41993076b7c629ff7, type: 3}
+      propertyPath: m_Text
+      value: You don't have enough money!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb46c867cae151b41993076b7c629ff7, type: 3}

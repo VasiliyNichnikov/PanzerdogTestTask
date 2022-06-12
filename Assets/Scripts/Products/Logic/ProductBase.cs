@@ -34,8 +34,11 @@ namespace Products.Logic
         
         private float _price;
         private int _numberInList;
-                
-        public abstract void GetPurchased();
+
+        public virtual void GetPurchased()
+        {
+            Destroy(gameObject);
+        }
 
         private void Start()
         {
