@@ -1,5 +1,5 @@
 ﻿using System;
-using Products.Logic;
+using Products;
 
 public static class EventManager
 {
@@ -21,6 +21,12 @@ public static class EventManager
     #region AddMoney
 
     public static Action<float> AddAmount;
+
+    #endregion
+
+    #region RemoveProduct
+
+    public static Action<ProductBase> DestroyerProduct;
 
     #endregion
 }

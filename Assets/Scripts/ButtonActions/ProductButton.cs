@@ -1,4 +1,4 @@
-using Products.Logic;
+using Products;
 using UnityEngine;
 
 namespace ButtonActions

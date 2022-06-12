@@ -1,6 +1,6 @@
 using System;
 using Buyer;
-using Products.Logic;
+using Products;
 using UnityEngine;
 using Wallet.UI;
 
@@ -36,13 +36,13 @@ namespace Seller
 
         private void StartPurchase(IProduct product)
         {
+            _selectedProduct = product;
             if (product.Price == 0)
             {
                 CompletePurchase(free: true);
                 return;
             }
             
-            _selectedProduct = product;
             if (_transaction.CheckSubtractions(product.Price))
             {
                 EventManager.ReportPurchase();
@@ -55,11 +55,11 @@ namespace Seller
 
         private void CompletePurchase(bool free = false)
         {
+            if (_selectedProduct == null)
+                throw new ArgumentNullException();
+            
             if (free == false)
             {
-                if (_selectedProduct == null)
-                    throw new ArgumentNullException();
-                
                 EventManager.ReportClosure();
                 _transaction.CloseWithSuccess(_selectedProduct.Price);
                 ChangeTextBalance();
