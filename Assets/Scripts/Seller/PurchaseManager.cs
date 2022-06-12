@@ -1,3 +1,5 @@
+using System;
+using Buyer;
 using Products.Logic;
 using UnityEngine;
 using Wallet.UI;
@@ -8,40 +10,74 @@ namespace Seller
     {
         [SerializeField] private BalanceTextManager _balanceTextManager;
         [SerializeField] private User _user;
+
         private Transaction _transaction;
-        
+        private IProduct _selectedProduct;
+
         private void OnEnable()
         {
             EventManager.StartPurchase += StartPurchase;
             EventManager.CompletePurchase += CompletePurchase;
+            EventManager.AddAmount += AddAmount;
         }
 
         private void OnDisable()
         {
             EventManager.StartPurchase -= StartPurchase;
             EventManager.CompletePurchase -= CompletePurchase;
+            EventManager.AddAmount -= AddAmount;
         }
 
         private void Start()
         {
+            _transaction = new Transaction(_user.Balance);
             ChangeTextBalance();
         }
-        
-        private void StartPurchase(ProductBase product)
+
+        private void StartPurchase(IProduct product)
         {
-            _transaction = new Transaction(_user.Balance, product);
-            _transaction.Check();
+            if (product.Price == 0)
+            {
+                CompletePurchase(free: true);
+                return;
+            }
+            
+            _selectedProduct = product;
+            if (_transaction.CheckSubtractions(product.Price))
+            {
+                EventManager.ReportPurchase();
+            }
+            else
+            {
+                EventManager.ReportPurchaseMistake();
+            }
         }
 
-        private void CompletePurchase()
+        private void CompletePurchase(bool free = false)
         {
-            _transaction.CloseWithSuccess();
+            if (free == false)
+            {
+                if (_selectedProduct == null)
+                    throw new ArgumentNullException();
+                
+                EventManager.ReportClosure();
+                _transaction.CloseWithSuccess(_selectedProduct.Price);
+                ChangeTextBalance();
+            }
+            _selectedProduct.GetPurchased();
+        }
+
+        private void AddAmount(float amount)
+        {
+            if (_transaction.CheckAdditions() == false) return;
+
+            _transaction.CloseWithSuccess(amount, subtraction: false);
             ChangeTextBalance();
         }
 
         private void ChangeTextBalance()
         {
-            _balanceTextManager.ChangeBalance(_user.Balance.AmountOfMoney);
+            _balanceTextManager.Change(_user.Balance.AmountOfMoney);
         }
     }
 }

@@ -1,4 +1,3 @@
-using Products.Logic;
 using Wallet.Logic;
 
 namespace Seller
@@ -6,31 +5,29 @@ namespace Seller
     public class Transaction
     {
         private readonly IBalance _balance;
-        private readonly ProductBase _product;
-        
-        public Transaction(IBalance balance, ProductBase product)
+
+        public Transaction(IBalance balance)
         {
             _balance = balance;
-            _product = product;
         }
 
-        public void Check()
+        public bool CheckSubtractions(float productPrice)
         {
-            var productPrice = _product.Price;
-            if (_balance.AmountOfMoney - productPrice < 0)
-            {
-                EventManager.ReportPurchaseMistake();
-                return;
-            }
-
-            EventManager.ReportPurchase();
+            return _balance.AmountOfMoney - productPrice >= 0;
         }
 
-        public void CloseWithSuccess()
+        public bool CheckAdditions()
         {
-            EventManager.ReportClosure();
-            _balance.Subtract(_product.Price);
-            _product.GetPurchased();
+            return true; // можно сделать ограничение по размеру суммы
         }
+        
+        public void CloseWithSuccess(float amount, bool subtraction=true)
+        {
+            if(subtraction)
+                _balance.Subtract(amount);
+            else
+                _balance.Add(amount);
+        }
+        
     }
 }

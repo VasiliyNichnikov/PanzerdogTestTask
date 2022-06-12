@@ -6,7 +6,7 @@ namespace ButtonActions
     {
         public void Press()
         {
-            EventManager.CompletePurchase();
+            EventManager.CompletePurchase(false);
         }
     }
 }

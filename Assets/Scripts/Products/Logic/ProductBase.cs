@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Products.Logic
 {
-    public abstract class ProductBase: MonoBehaviour
+    public abstract class ProductBase: MonoBehaviour, IProduct
     {
         public int NumberInList
         {
@@ -40,7 +40,7 @@ namespace Products.Logic
             Destroy(gameObject);
         }
 
-        private void Start()
+        public virtual void Start()
         {
             _price = 500;
             _numberText.text = _numberInList.ToString();

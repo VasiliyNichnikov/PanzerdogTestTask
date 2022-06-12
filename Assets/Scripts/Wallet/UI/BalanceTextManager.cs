@@ -13,7 +13,7 @@ namespace Wallet.UI
             _balance = GetComponent<Text>();
         }
 
-        public void ChangeBalance(float newBalance)
+        public void Change(float newBalance)
         {
             _balance.text = $"Account: {newBalance.ToString(CultureInfo.InvariantCulture)}$";
         }

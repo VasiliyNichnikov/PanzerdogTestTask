@@ -13,8 +13,14 @@ public static class EventManager
 
     #region PurchaseProduct
 
-    public static Action<ProductBase> StartPurchase;
-    public static Action CompletePurchase;
+    public static Action<IProduct> StartPurchase;
+    public static Action<bool> CompletePurchase;
+
+    #endregion
+
+    #region AddMoney
+
+    public static Action<float> AddAmount;
 
     #endregion
 }
