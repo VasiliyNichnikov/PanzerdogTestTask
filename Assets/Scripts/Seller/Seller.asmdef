@@ -1,0 +1,18 @@
+{
+    "name": "Seller",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5150c74a0a371d440a7c2ccf8e83b222",
+        "GUID:ac9db22eb5002fe479d7a4978ddeca3e",
+        "GUID:2f0afd1f31606664390435351b16cd8d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
