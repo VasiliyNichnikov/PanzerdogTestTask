@@ -23,4 +23,10 @@ public static class EventManager
     public static Action<float> AddAmount;
 
     #endregion
+
+    #region RemoveProduct
+
+    public static Action<ProductBase> DestroyerProduct;
+
+    #endregion
 }

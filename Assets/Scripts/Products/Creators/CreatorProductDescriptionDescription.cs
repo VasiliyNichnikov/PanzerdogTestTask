@@ -18,8 +18,8 @@ namespace Products.Creators
         public ProductBase Create(int numberInList, float price, Transform parent)
         {
             var product = Object.Instantiate(_prefab, parent).GetComponent<ProductDescriptionDescription>();
-            product.NumberInList = numberInList;
-            product.Price = price;
+            product.SetNumberInList(numberInList);
+            product.SetPrice(price);
             product.SetDescription(_descriptionOne);
             product.SetDescriptionTwo(_descriptionTwo);
             return product;

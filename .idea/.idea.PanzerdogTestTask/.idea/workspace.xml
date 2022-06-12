@@ -2,40 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc5b085-f541-417b-9a39-008cdcd6f56d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PanzerdogTestTask/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PanzerdogTestTask/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescriptionDescription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreview.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewDescription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewPreview.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Description-Description.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Description-Description.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Description.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Description.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Preview-Description.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Preview-Description.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Preview-Preview.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Preview-Preview.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Preview.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Preview.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Virtual-Currency.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Products/Product-Virtual-Currency.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ProductButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ProductButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PanzerdogTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PanzerdogTestTask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ButtonActions.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ButtonActions.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buyer/Buyer.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buyer/Buyer.asmdef.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/IProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/IProduct.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/IProduct.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/IProduct.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductDescription.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductDescription.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescription.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductDescriptionDescription.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductDescriptionDescription.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescriptionDescription.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductPreview.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductPreview.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreview.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductPreviewDescription.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductPreviewDescription.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewDescription.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductPreviewPreview.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductPreviewPreview.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewPreview.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductVirtualCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductVirtualCurrency.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Logic/ProductVirtualCurrency.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductVirtualCurrency.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/PurchaseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Seller/PurchaseManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescriptionDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescriptionDescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreview.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewDescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewPreview.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductVirtualCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductVirtualCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Products.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Products.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/Seller.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/Seller.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/StoreEditor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/StoreEditor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Tables.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Tables.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wallet/Wallet.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wallet/Wallet.asmdef.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonActions/ConfirmationButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Seller/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -104,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655022299075</updated>
       <workItem from="1655022308209" duration="35000" />
-      <workItem from="1655022373825" duration="26586000" />
+      <workItem from="1655022373825" duration="27758000" />
     </task>
     <servers />
   </component>

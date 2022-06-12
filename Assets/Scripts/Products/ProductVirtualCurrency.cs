@@ -17,6 +17,7 @@ namespace Products
         
         public override void GetPurchased()
         {
+            EventManager.AddAmount(_number);
             base.GetPurchased();
         }
     }

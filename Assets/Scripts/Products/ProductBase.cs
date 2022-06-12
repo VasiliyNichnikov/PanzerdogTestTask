@@ -5,52 +5,40 @@ using UnityEngine.UI;
 
 namespace Products
 {
-    public abstract class ProductBase: MonoBehaviour, IProduct
+    public abstract class ProductBase : MonoBehaviour, IProduct
     {
-        public int NumberInList
-        {
-            get => _numberInList;
-            set
-            {
-                if (value >= 1)
-                    _numberInList = value;
-                else
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
-
-        public float Price
-        {
-            get => _price;
-            set
-            {
-                if (value >= 0)
-                    _price = value;
-                else
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
+        public float Price { get; private set; }
 
         [SerializeField] private Text _numberText;
         [SerializeField] private Text _priceText;
-        
-        private float _price;
         private int _numberInList;
+
+        public void SetNumberInList(int value)
+        {
+            if (value >= 1)
+                _numberInList = value;
+            else
+                throw new ArgumentOutOfRangeException();
+            _numberText.text = _numberInList.ToString();
+        }
+
+        public void SetPrice(float value)
+        {
+            if (value >= 0)
+                Price = value;
+            else
+                throw new ArgumentOutOfRangeException();
+            _priceText.text = GetPriceText();
+        }
 
         public virtual void GetPurchased()
         {
-            Destroy(gameObject);
-        }
-
-        public virtual void Start()
-        {
-            _numberText.text = _numberInList.ToString();
-            _priceText.text = GetPriceText();
+            EventManager.DestroyerProduct(this);
         }
 
         private string GetPriceText()
         {
-            return _price == 0 ? "Free" : $"{_price.ToString(CultureInfo.InvariantCulture)}$";
+            return Price == 0 ? "Free" : $"{Price.ToString(CultureInfo.InvariantCulture)}$";
         }
     }
 }

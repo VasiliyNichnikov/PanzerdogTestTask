@@ -16,8 +16,8 @@ namespace Products.Creators
         public ProductBase Create(int numberInList, float price, Transform parent)
         {
             var product = Object.Instantiate(_prefab, parent).GetComponent<ProductVirtualCurrency>();
-            product.NumberInList = numberInList;
-            product.Price = price;
+            product.SetNumberInList(numberInList);
+            product.SetPrice(price);
             product.SetVirtualCurrency(_number);
             return product;
         }
