@@ -6,8 +6,7 @@ namespace ButtonActions
     {
         public void Press()
         {
-            EventManager.ReportPurchaseDetails();
-            EventManager.ReportClosure();
+            EventManager.CompletePurchase();
         }
     }
 }

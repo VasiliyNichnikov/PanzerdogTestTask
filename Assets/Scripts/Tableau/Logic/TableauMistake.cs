@@ -11,11 +11,6 @@ namespace Tableau.Logic
             _createdTableau = Object.Instantiate(prefab, parent);
         }
 
-        public void Send()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public void Remove()
         {
             if(_createdTableau != null)

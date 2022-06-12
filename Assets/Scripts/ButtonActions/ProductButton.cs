@@ -9,7 +9,7 @@ namespace ButtonActions
 
         public void Press()
         {
-            EventManager.ReportPurchase(_product);
+            EventManager.StartPurchase(_product);
         }
     }
 }

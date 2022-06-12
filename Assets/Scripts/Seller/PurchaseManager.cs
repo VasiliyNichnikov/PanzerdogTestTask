@@ -8,15 +8,18 @@ namespace Seller
     {
         [SerializeField] private BalanceTextManager _balanceTextManager;
         [SerializeField] private User _user;
-
+        private Transaction _transaction;
+        
         private void OnEnable()
         {
-            EventManager.Buy += Buy;
+            EventManager.StartPurchase += StartPurchase;
+            EventManager.CompletePurchase += CompletePurchase;
         }
 
         private void OnDisable()
         {
-            EventManager.Buy -= Buy;
+            EventManager.StartPurchase -= StartPurchase;
+            EventManager.CompletePurchase -= CompletePurchase;
         }
 
         private void Start()
@@ -24,12 +27,16 @@ namespace Seller
             ChangeTextBalance();
         }
         
-        private void Buy(ProductBase product)
+        private void StartPurchase(ProductBase product)
         {
-            var newTransaction = new Transaction();
-            newTransaction.ToPerform(_user.Balance, product);
+            _transaction = new Transaction(_user.Balance, product);
+            _transaction.Check();
+        }
+
+        private void CompletePurchase()
+        {
+            _transaction.CloseWithSuccess();
             ChangeTextBalance();
-            product.GetPurchased();
         }
 
         private void ChangeTextBalance()

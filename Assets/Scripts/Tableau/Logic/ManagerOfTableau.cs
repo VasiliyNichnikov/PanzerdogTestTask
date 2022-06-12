@@ -1,6 +1,4 @@
-﻿using System;
-using Products.Logic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Tableau.Logic
 {
@@ -15,7 +13,6 @@ namespace Tableau.Logic
         private void OnEnable()
         {
             EventManager.ReportPurchase += ToCreateNewConfirmPurchase;
-            EventManager.ReportPurchaseDetails += SendReplyTableau;
             EventManager.ReportClosure += ToClose;
             EventManager.ReportPurchaseMistake += ToCreateNewMistake;
         }
@@ -23,16 +20,15 @@ namespace Tableau.Logic
         private void OnDisable()
         {
             EventManager.ReportPurchase -= ToCreateNewConfirmPurchase;
-            EventManager.ReportPurchaseDetails -= SendReplyTableau;
             EventManager.ReportClosure -= ToClose;
             EventManager.ReportPurchaseMistake -= ToCreateNewMistake;
         }
 
-        private void ToCreateNewConfirmPurchase(ProductBase product)
+        private void ToCreateNewConfirmPurchase()
         {
             if (_tableau != null)
                 return;
-            _tableau = new TableauConfirmPurchase(product);
+            _tableau = new TableauConfirmPurchase();
             ToCreateTableau(_confirmPurchase);
         }
 
@@ -48,13 +44,6 @@ namespace Tableau.Logic
         {
             _tableau?.Remove();
             _tableau = null;
-        }
-
-        private void SendReplyTableau()
-        {
-            if (_tableau == null)
-                throw new Exception("Information tableau is not selected");
-            _tableau.Send();
         }
 
         private void ToCreateTableau(GameObject prefab)

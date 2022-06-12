@@ -5,15 +5,32 @@ namespace Seller
 {
     public class Transaction
     {
-        public void ToPerform(IBalance balance, ProductBase product)
+        private readonly IBalance _balance;
+        private readonly ProductBase _product;
+        
+        public Transaction(IBalance balance, ProductBase product)
         {
-            var productPrice = product.Price;
-            if (balance.AmountOfMoney - productPrice < 0)
+            _balance = balance;
+            _product = product;
+        }
+
+        public void Check()
+        {
+            var productPrice = _product.Price;
+            if (_balance.AmountOfMoney - productPrice < 0)
             {
                 EventManager.ReportPurchaseMistake();
                 return;
             }
-            balance.Subtract(productPrice);
+
+            EventManager.ReportPurchase();
+        }
+
+        public void CloseWithSuccess()
+        {
+            EventManager.ReportClosure();
+            _balance.Subtract(_product.Price);
+            _product.GetPurchased();
         }
     }
 }
