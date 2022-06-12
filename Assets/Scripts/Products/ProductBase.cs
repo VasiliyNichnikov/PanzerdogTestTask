@@ -3,7 +3,7 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Products.Logic
+namespace Products
 {
     public abstract class ProductBase: MonoBehaviour, IProduct
     {
@@ -14,7 +14,8 @@ namespace Products.Logic
             {
                 if (value >= 1)
                     _numberInList = value;
-                throw new ArgumentOutOfRangeException();
+                else
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
@@ -25,7 +26,8 @@ namespace Products.Logic
             {
                 if (value >= 0)
                     _price = value;
-                throw new ArgumentOutOfRangeException();
+                else
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
@@ -42,7 +44,6 @@ namespace Products.Logic
 
         public virtual void Start()
         {
-            _price = 500;
             _numberText.text = _numberInList.ToString();
             _priceText.text = GetPriceText();
         }

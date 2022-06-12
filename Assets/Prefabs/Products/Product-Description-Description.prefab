@@ -172,6 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberText: {fileID: 7463443966342374805}
   _priceText: {fileID: 6645843792020459174}
+  _description: {fileID: 285221169083064821}
+  _descriptionTwo: {fileID: 6364204336854145304}
 --- !u!1001 &7706526417887234558
 PrefabInstance:
   m_ObjectHideFlags: 0

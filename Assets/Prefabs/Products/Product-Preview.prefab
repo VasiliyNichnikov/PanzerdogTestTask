@@ -89,6 +89,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberText: {fileID: 2848596145933340725}
   _priceText: {fileID: 2027044325881592582}
+  _preview: {fileID: 1644082802059215544}
 --- !u!1001 &3091810576455498846
 PrefabInstance:
   m_ObjectHideFlags: 0

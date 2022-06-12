@@ -1,0 +1,16 @@
+{
+    "name": "StoreEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ac9db22eb5002fe479d7a4978ddeca3e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,4 +1,4 @@
-﻿namespace Products.Logic
+﻿namespace Products
 {
     public interface IProduct
     {

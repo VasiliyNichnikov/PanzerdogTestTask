@@ -1,5 +1,5 @@
 ﻿using System;
-using Products.Logic;
+using Products;
 
 public static class EventManager
 {

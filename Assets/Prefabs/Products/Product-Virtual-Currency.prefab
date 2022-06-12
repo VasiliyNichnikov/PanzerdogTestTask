@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberText: {fileID: 4561029272659424640}
   _priceText: {fileID: 352893739221786291}
+  _virtualCurrency: {fileID: 5480621867200089447}
 --- !u!1 &8014408530438433140
 GameObject:
   m_ObjectHideFlags: 0

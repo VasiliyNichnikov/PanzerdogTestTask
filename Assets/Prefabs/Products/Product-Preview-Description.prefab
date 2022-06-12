@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberText: {fileID: 291038172292231304}
   _priceText: {fileID: 4584739899567856571}
+  _preview: {fileID: 6210884646265670047}
+  _description: {fileID: 4587048581004567920}
 --- !u!1 &4974785637902507061
 GameObject:
   m_ObjectHideFlags: 0
