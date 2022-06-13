@@ -3,6 +3,8 @@
 
 Версия Unity: 2020.3.11f1
 
+[Для UI использовал asset](https://assetstore.unity.com/packages/2d/gui/icons/simple-ui-103969#publisher)
+
 ## Показ результата
 Общий вид магазина при запуске
 ![image](https://user-images.githubusercontent.com/57954863/173400702-d21aa23d-942e-4c5c-8bbb-8ae6a9317504.png)
