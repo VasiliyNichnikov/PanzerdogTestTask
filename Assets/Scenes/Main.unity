@@ -488,6 +488,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b0574e3cb920afa4e9861a9ad2971735, type: 2}
   - {fileID: 11400000, guid: e4461389c0b7b3149bd851eeae9425ed, type: 2}
   - {fileID: 11400000, guid: c7e57b12784f78c4485694e7519efd1f, type: 2}
+  - {fileID: 11400000, guid: e4461389c0b7b3149bd851eeae9425ed, type: 2}
+  - {fileID: 11400000, guid: 367761d672c09a64dbc809f9b660fa33, type: 2}
 --- !u!114 &550607305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,6 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _balanceTextManager: {fileID: 411769734}
   _user: {fileID: 1745494704}
+  _managerOfTableau: {fileID: 1567978978}
 --- !u!1 &1210875327
 GameObject:
   m_ObjectHideFlags: 0

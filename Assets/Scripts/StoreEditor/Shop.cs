@@ -10,6 +10,7 @@ namespace StoreEditor
     {
         [SerializeField] private Transform _parent;
         [SerializeField] private BlockBase[] _products;
+        
         private List<ProductBase> _createdProducts;
         private CreatorsBlock _creator;
 

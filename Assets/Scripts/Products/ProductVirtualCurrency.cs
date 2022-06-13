@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using Seller;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +18,7 @@ namespace Products
         
         public override void GetPurchased()
         {
-            EventManager.AddAmount(_number);
+            EventManager.PurchaseWithoutConfirmation(_number, TypesOfActionsWithBalance.Addendum);
             base.GetPurchased();
         }
     }

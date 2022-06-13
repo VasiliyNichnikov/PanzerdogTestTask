@@ -1,4 +1,5 @@
 using Products;
+using Seller;
 using UnityEngine;
 
 namespace ButtonActions
@@ -9,7 +10,7 @@ namespace ButtonActions
 
         public void Press()
         {
-            EventManager.StartPurchase(_product);
+            EventManager.StartPurchase(_product, TypesOfActionsWithBalance.Subtraction);
         }
     }
 }

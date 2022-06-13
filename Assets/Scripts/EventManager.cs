@@ -1,26 +1,14 @@
 ﻿using System;
 using Products;
+using Seller;
 
 public static class EventManager
 {
-    #region TableauActions
-
-    public static Action ReportPurchase;
-    public static Action ReportPurchaseMistake;
-    public static Action ReportClosure;
-
-    #endregion
-
     #region PurchaseProduct
 
-    public static Action<IProduct> StartPurchase;
-    public static Action<bool> CompletePurchase;
-
-    #endregion
-
-    #region AddMoney
-
-    public static Action<float> AddAmount;
+    public static Action<IProduct, TypesOfActionsWithBalance> StartPurchase;
+    public static Action CompletePurchase;
+    public static Action<float, TypesOfActionsWithBalance> PurchaseWithoutConfirmation;
 
     #endregion
 
