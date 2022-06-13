@@ -11,10 +11,5 @@ namespace Products
         {
             _previewTwo.sprite = sprite;
         }
-        
-        public override void GetPurchased()
-        {
-            base.GetPurchased();
-        }
     }
 }

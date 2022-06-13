@@ -11,10 +11,5 @@ namespace Products
         {
             _descriptionTwo.text = text;
         }
-        
-        public override void GetPurchased()
-        {
-            base.GetPurchased();
-        }
     }
 }

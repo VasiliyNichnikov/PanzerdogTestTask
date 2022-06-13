@@ -2,32 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc5b085-f541-417b-9a39-008cdcd6f56d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/TableauBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/TableauBaseConfirmPurchase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/TableauBaseMistake.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PanzerdogTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PanzerdogTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ButtonActions.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ButtonActions.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buyer/Buyer.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buyer/Buyer.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tableau/TableauConfirmPurchase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tableau/TableauConfirmPurchase.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tableau/TableauMistake.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tableau/TableauMistake.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/CancelButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/CancelButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ConfirmationButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ConfirmationButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ProductButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonActions/ProductButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescriptionDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductDescriptionDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreview.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewDescription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductPreviewPreview.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductVirtualCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/Creators/CreatorProductVirtualCurrency.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Products.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/Products.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/Seller.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/Seller.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescriptionDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductDescriptionDescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreview.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewDescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewDescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductPreviewPreview.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Products/ProductVirtualCurrency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Products/ProductVirtualCurrency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/PurchaseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Seller/PurchaseManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Seller/BalanceController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Seller/Transaction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Seller/BalanceController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/StoreEditor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StoreEditor/StoreEditor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Tables.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Tables.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wallet/Wallet.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wallet/Wallet.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/ITableau.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/ITableau.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/TableauBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/ManagerOfTableau.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/ManagerOfTableau.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/ManagerOfTableau.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/ManagerOfTableau.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/TableauConfirmPurchase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/TableauConfirmPurchase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/TableauBaseConfirmPurchase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/TableauMistake.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tableau/Logic/TableauMistake.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tableau/TableauBaseMistake.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonActions/ConfirmationButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Products/ProductBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Seller/Transaction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Seller/BalanceController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -97,7 +101,10 @@
       <option name="presentableId" value="Default" />
       <updated>1655022299075</updated>
       <workItem from="1655022308209" duration="35000" />
-      <workItem from="1655022373825" duration="27758000" />
+      <workItem from="1655022373825" duration="28116000" />
+      <workItem from="1655051929330" duration="32000" />
+      <workItem from="1655129491066" duration="315000" />
+      <workItem from="1655129941686" duration="6676000" />
     </task>
     <servers />
   </component>

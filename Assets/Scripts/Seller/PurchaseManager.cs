@@ -1,6 +1,7 @@
 using System;
 using Buyer;
 using Products;
+using Tableau;
 using UnityEngine;
 using Wallet.UI;
 
@@ -10,69 +11,77 @@ namespace Seller
     {
         [SerializeField] private BalanceTextManager _balanceTextManager;
         [SerializeField] private User _user;
+        [SerializeField] private ManagerOfTableau _managerOfTableau;
 
         private Transaction _transaction;
-        private IProduct _selectedProduct;
+        private IProduct _product;
 
         private void OnEnable()
         {
-            EventManager.StartPurchase += StartPurchase;
-            EventManager.CompletePurchase += CompletePurchase;
-            EventManager.AddAmount += AddAmount;
+            EventManager.StartPurchase += StartPurchaseProduct;
+            EventManager.CompletePurchase += CompletePurchaseProduct;
+            EventManager.PurchaseWithoutConfirmation += PurchaseWithoutConfirmation;
         }
 
         private void OnDisable()
         {
-            EventManager.StartPurchase -= StartPurchase;
-            EventManager.CompletePurchase -= CompletePurchase;
-            EventManager.AddAmount -= AddAmount;
+            EventManager.StartPurchase -= StartPurchaseProduct;
+            EventManager.CompletePurchase -= CompletePurchaseProduct;
+            EventManager.PurchaseWithoutConfirmation -= PurchaseWithoutConfirmation;
         }
 
         private void Start()
         {
-            _transaction = new Transaction(_user.Balance);
             ChangeTextBalance();
         }
 
-        private void StartPurchase(IProduct product)
+        private void StartPurchaseProduct(IProduct product, TypesOfActionsWithBalance action)
         {
-            _selectedProduct = product;
+            _product = product;
+            _transaction = new Transaction(_user.Balance, product.Price, action);
+            var answer = _transaction.Confirmation();
+            
             if (product.Price == 0)
             {
-                CompletePurchase(free: true);
-                return;
-            }
-            
-            if (_transaction.CheckSubtractions(product.Price))
-            {
-                EventManager.ReportPurchase();
+                CompletePurchaseProduct();
             }
             else
             {
-                EventManager.ReportPurchaseMistake();
+                DisplayPurchaseConfirmations(answer, product.Price);
             }
         }
 
-        private void CompletePurchase(bool free = false)
+        private void DisplayPurchaseConfirmations(bool answer, float amount)
         {
-            if (_selectedProduct == null)
-                throw new ArgumentNullException();
-            
-            if (free == false)
+            if (answer)
             {
-                EventManager.ReportClosure();
-                _transaction.CloseWithSuccess(_selectedProduct.Price);
+                _managerOfTableau.OpenConfirmPurchase("Are you sure?",
+                    $"After confirmation, you will receive the goods and you will be charged ${amount}");
+            }
+            else
+            {
+                _managerOfTableau.OpenMistake("Oops!", "You don't have enough money :(");
+            }
+        }
+
+        private void CompletePurchaseProduct()
+        {
+            if (_transaction == null || _product == null)
+                throw new ArgumentNullException();
+            _transaction.ToProduce();
+            _product.GetPurchased();
+            ChangeTextBalance();
+        }
+
+        private void PurchaseWithoutConfirmation(float amount, TypesOfActionsWithBalance action)
+        {
+            _transaction = new Transaction(_user.Balance, amount, action);
+            var answer = _transaction.Confirmation();
+            if (answer)
+            {
+                _transaction.ToProduce();
                 ChangeTextBalance();
             }
-            _selectedProduct.GetPurchased();
-        }
-
-        private void AddAmount(float amount)
-        {
-            if (_transaction.CheckAdditions() == false) return;
-
-            _transaction.CloseWithSuccess(amount, subtraction: false);
-            ChangeTextBalance();
         }
 
         private void ChangeTextBalance()
